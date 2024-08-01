@@ -6,7 +6,7 @@ import json
 import pandas as pd
 
 def download_data():
-    api_key = 'YOUR_API_KEY'
+    api_key = '7e635e7e06819dee7e64869c97739e05'
     city = 'London'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
