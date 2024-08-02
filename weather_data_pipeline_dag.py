@@ -78,7 +78,7 @@ save_task = PythonOperator(
     task_id='save_data',  # Идентификатор задачи
     python_callable=save_data,  # Функция, выполняемая задачей
     dag=dag,  # DAG, к которому принадлежит задача
-)
+) 
 
 # Определение последовательности выполнения задач
 download_task >> process_task >> save_task
